@@ -7,5 +7,5 @@ def oxford_comma(array)
     array.slice_after(1).map { |e| e.join "," }.join(" and ")
   end
 
-  
+
 end
