@@ -5,5 +5,5 @@ def oxford_comma(array)
   #   array.join(" and ")
   # end
 
-  array.to_sentence(last_word_connector: ' and ')
+  array.slice_after(3).map { |e| e.join "," }.join(" and ")
 end
