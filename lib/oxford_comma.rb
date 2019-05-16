@@ -3,7 +3,7 @@ def oxford_comma(array)
     array.join(",")
   elsif array.length < 3
     array.join(" and ")
-  elsif array.length < 4
+  elsif array.length == 3
     array.slice_after(1).map { |e| e.join "," }.join(" and ")
   end
 
